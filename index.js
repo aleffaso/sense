@@ -29,10 +29,10 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-//database connection
-connection.authenticate().then(() => {}).catch((error) => {
-    console.log(error);
-});
+// //database connection
+// connection.authenticate().then(() => {}).catch((error) => {
+//     console.log(error);
+// });
 
 //routes
 app.use("/", users);
