@@ -1,0 +1,290 @@
+
+
+
+
+          <!-- Button trigger modal
+          <div style="text-align: center;">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalBasket">
+            Teste de carrinho
+          </button>
+          Formulario-->
+
+          <div class="modal fade" id="modalBasket" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+
+                <div class="modal-header py-4">
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div class="modal-body mx-3 pt-4 pb-0">
+
+                  <div class="media mb-4">
+                    <div class="col-md col-lg-8 mb-2" id="placing_select"></div>
+
+                    <div style="text-align:left;">
+
+                    <p><b>Tamanho</b></br>
+
+                      <form target=__blank id="checkout" action="comprar.php" method="get">
+
+                        <input type="radio" id="pequeno" name="tamanho" value="pequeno" checked /> <label for="pequeno">P (30cm x 40cm) - R$ 257,00</label><br/>
+
+                        <input type="radio" id="medio" name="tamanho" value="medio" /> <label for="medio">M (50cm x 70cm) - R$ 397,00</label><br/>
+
+                        <input type="radio" id="grande" name="tamanho" value="grande" /> <label for="grande">G (50cm x 80cm) - R$ 437,00 </label><br/>
+
+                      <p>  <p><b>Cor da moldura</b><br/>
+
+                        <input type="radio" id="branca" name="cor" value="branca" checked /> <label for="branca">Branca </label><br/>
+
+                        <input type="radio" id="preta" name="cor" value="preta"/> <label for="preta">Preta </label><br/><br/><br/>
+
+                        <div style="text-align:center;">
+
+                        <!--    <button type="button" class="btn btn-primary">Adicionar ao carrinho</button> -->
+
+                        <br/></br>
+
+                        <input type="hidden" id="selectedImage" name="selectedImage" value=""/>
+
+                        <input type="submit" style="margin-left: 30%;" class="btn btn-primary" onclick="submitFunction()" value="Checkout"></input>
+                        </div>
+
+
+                      </form>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                  <div class="col-correct mb-3 img-fluid1 w-auto">
+                      <div id="backImage1"></div>
+                      <div id="coverImage1"></div>
+                  </div>
+
+                  <div class="col-correct mb-3 img-fluid1 w-auto">
+                    <div id="backImage2"></div>
+                    <div id="coverImage2"></div>
+                  </div>
+
+                  <div class="col-correct mb-3 img-fluid1 w-auto">
+                    <div id="backImage3"></div>
+                    <div id="coverImage3"></div>
+                  </div>
+
+                  <div class="col-correct mb-3 img-fluid1 w-auto">
+                    <div id="backImage4"></div>
+                    <div id="coverImage4"></div>
+                  </div>
+
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center py-4">
+                  <a  class="card-link-secondary small text-uppercase CurrentImageNumber">Mais informações</a>
+                </div>
+                <div class="row" style="padding-left: 15%;text-align:center;">
+                  <div>
+                    <p><span>&#10003;</span>  Impressão de alta qualidade
+                    <p><span>&#10003;</span>  Com moldura (preta ou branca)
+                    <p><span>&#10003;</span>  Pronto para parede
+                  </div>
+                  <div>
+                    <p><span>&#10003;</span>  Com vidro
+                    <p><span>&#10003;</span>  Possui gancho para fixação do parafuso
+                    <p><span>&#10005;</span>  Não acompanha parafusos e buchas de fixação
+                  </div>
+              </div>
+
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Formulario-->
+
+
+          <!-- Projects Gallery-->
+        <section class="projects-section-1 bg-light" id="projects">
+
+          <div style="text-align: center;">
+            <h1 class="text-center" style="padding:1rem 0;">Galeria</h1>
+            <button class="filter-button  filter-btn news" data-filter="news">Novidades</button>
+            <button class="filter-button  filter-btn todos" data-filter="all">Todos</button>
+            <button class="filter-button  filter-btn categoria" data-filter="all">Categorias</button>
+            <button class="filter-button  filter-btn all_cores" data-filter="all">Cores</button>
+          </div>
+
+        <div style="text-align: center;">
+          <button class="filter-button  filter-btn abstratos" data-filter="category0">Abstratos</button>
+          <button class="filter-button  filter-btn animais" data-filter="category1">Animais</button>
+          <button class="filter-button  filter-btn arquitetura" data-filter="category2">Arquitetura</button>
+          <button class="filter-button  filter-btn bebidas" data-filter="category3">Bebidas</button>
+          <button class="filter-button  filter-btn carros" data-filter="category4">Carros</button>
+          <button class="filter-button  filter-btn ceu" data-filter="category5">Ceu</button>
+          <button class="filter-button  filter-btn cidades" data-filter="category6">Cidades</button>
+          <button class="filter-button  filter-btn comidas" data-filter="category7">Comidas</button>
+          <button class="filter-button  filter-btn espirituais" data-filter="category8">Espirituais</button>
+          <button class="filter-button  filter-btn flores" data-filter="category9">Flores</button>
+          <button class="filter-button  filter-btn frases" data-filter="category10">Frases</button>
+          <button class="filter-button  filter-btn lugares" data-filter="category11">lugares</button>
+          <button class="filter-button  filter-btn mar" data-filter="category12">Mar</button>
+          <button class="filter-button  filter-btn musica" data-filter="category13">Música</button>
+          <button class="filter-button filter-btn natureza" data-filter="category14">Natureza</button>
+          <button class="filter-button  filter-btn neon" data-filter="category15">Neon</button>
+          <button class="filter-button  filter-btn pessoas" data-filter="category16">Pessoas</button>
+          <button class="filter-button  filter-btn plantas" data-filter="category17">Plantas</button>
+          <button class="filter-button  filter-btn vintage" data-filter="category18">Vintage</button>
+        </div>
+
+        <div style="text-align: center;">
+
+          <button class="filter-btn-rounded filter-button-rounded colorido" style="background-image: linear-gradient(to right, #ff00ff 0%, #00ff00 70%, #f0f0f0 100%);" data-filter="colorido" title="Colorido"></button>
+
+          <button class="filter-btn-rounded filter-button-rounded preto_branco" style="background-image: linear-gradient(to right, #ffffff 0%, #f0f0f0 49%, #000000 100%);" data-filter="preto_branco" title="Preto e Branco"></button>
+
+          <button class="filter-btn-rounded filter-button-rounded amarelo" style="background-color: #ffff00;border-color: #ffff00;" data-filter="amarelo" title="Amarelo"></button>
+
+          <button class="filter-btn-rounded filter-button-rounded azul" style="background-color: #0000ff;border-color: #0000ff;" data-filter="azul" title="Azul"></button>
+
+          <button class="filter-btn-rounded filter-button-rounded laranja" style="background-color: #ffa500;border-color: #ffa500;" data-filter="laranja" title="laranja"></button>
+
+          <button class="filter-btn-rounded filter-button-rounded rosa" style="background-color: #ffcbdb;border-color: #ffcbdb;" data-filter="rosa" title="Rosa"></button>
+
+          <button class="filter-btn-rounded filter-button-rounded verde" style="background-color: #008f39;border-color: #008f39;" data-filter="verde" title="Verde"></button>
+
+          <button class="filter-btn-rounded filter-button-rounded vermelho" style="background-color: #ff0000;border-color: #ff0000;" data-filter="vermelho" title="Vermelho"></button>
+
+        </div>
+
+          <div class="container-filter gallery" style="text-align:center;">
+
+                  <div class="filter news">
+                      <div id="placing_news"></div>
+                  </div>
+
+                    <div class="filter category0">
+                          <div id="placing_abstratos"></div>
+                    </div>
+
+                    <div class="filter category1">
+                          <div id="placing_animais"></div>
+                    </div>
+
+                    <div class="filter category2">
+                          <div id="placing_arquitetura"></div>
+                    </div>
+
+                    <div class="filter category3">
+                          <div id="placing_bebidas"></div>
+                    </div>
+
+                     <div class="filter category4">
+                          <div id="placing_carros"></div>
+                    </div>
+
+                   <div class="filter category5">
+                          <div id="placing_ceu"></div>
+                    </div>
+
+                    <div class="filter category6">
+                          <div id="placing_cidades"></div>
+                    </div>
+
+                    <div class="filter category7">
+                          <div id="placing_comidas"></div>
+                    </div>
+
+                    <div class="filter category8">
+                          <div id="placing_espirituais"></div>
+                    </div>
+
+                    <div class="filter category9">
+                          <div id="placing_flores"></div>
+                    </div>
+
+                    <div class="filter category10">
+                          <div id="placing_frases"></div>
+                    </div>
+
+                    <div class="filter category11">
+                          <div id="placing_lugares"></div>
+                    </div>
+
+                    <div class="filter category12">
+                          <div id="placing_mar"></div>
+                    </div>
+
+                    <div class="filter category13">
+                          <div id="placing_musica"></div>
+                    </div>
+
+                    <div class="filter category14">
+                          <div id="placing_natureza"></div>
+                    </div>
+
+                    <div class="filter category15">
+                          <div id="placing_neon"></div>
+                    </div>
+
+                    <div class="filter category16">
+                          <div id="placing_pessoas"></div>
+                    </div>
+
+                    <div class="filter category17">
+                          <div id="placing_plantas"></div>
+                    </div>
+
+                    <div class="filter category18">
+                          <div id="placing_vintage"></div>
+                    </div>
+
+                    <div class="filter amarelo">
+                          <div id="placing_amarelo"></div>
+                    </div>
+
+                    <div class="filter azul">
+                          <div id="placing_azul"></div>
+                    </div>
+
+                    <div class="filter colorido">
+                          <div id="placing_colorido"></div>
+                    </div>
+
+                    <div class="filter laranja">
+                          <div id="placing_laranja"></div>
+                    </div>
+
+                    <div class="filter preto_branco">
+                          <div id="placing_preto_branco"></div>
+                    </div>
+
+                    <div class="filter rosa">
+                          <div id="placing_rosa"></div>
+                    </div>
+
+                    <div class="filter verde">
+                          <div id="placing_verde"></div>
+                    </div>
+
+                    <div class="filter vermelho">
+                          <div id="placing_vermelho"></div>
+                    </div>
+
+                  </div>
+              </div>
+          </section>
+
+
+
+        <!-- Signup-->
+
+        <!-- Contact-->
+
+
+
