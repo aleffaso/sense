@@ -1,0 +1,35 @@
+{
+  "name": "sense",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "nodemon index.js"
+  },
+  "author": "Aleff Oliveira",
+  "license": "ISC",
+  "description": "## Overview The main purpose of this project is to create a webpage to a cliente about picture frames.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleffaso/sense.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aleffaso/sense/issues"
+  },
+  "homepage": "https://github.com/aleffaso/sense#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "heroku": "^7.60.2",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.16",
+    "pg": "^8.7.3",
+    "sequelize": "^6.21.0",
+    "slugify": "^1.6.5"
+  }
+}
