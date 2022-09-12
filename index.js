@@ -3,10 +3,10 @@ const app = express();
 const bodyParser = require('body-parser');
 const session = require('express-session');
 
-const connection = require("./db/db")
+// const connection = require("./db/db")
 const routes = require('./config/routes');
+// const users = require('./controllers/users');
 const dotenv = require('dotenv');
-const users = require('./controllers/users');
 
 
 //Set envkeys
@@ -35,7 +35,7 @@ app.use(bodyParser.json());
 // });
 
 //routes
-app.use("/", users);
+// app.use("/", users);
 app.use("/", routes);
 
 //Server
